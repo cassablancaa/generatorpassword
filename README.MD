@@ -24,7 +24,6 @@ Aplikacja **Generator Losowych Haseł** to program napisany w Pythonie, który g
 
 1. Pobierz plik `main.py`.
 2. Uruchom program za pomocą polecenia:
-   ```bash
    python main.py
 Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie.
 
