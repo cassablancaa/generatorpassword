@@ -1,9 +1,9 @@
 import unittest
 import string
-from main import (  # Importujemy wszystko, co jest potrzebne
+from main import ( 
     PasswordGenerator,
     PasswordDescriptor,
-    PasswordMeta,  # Dodajemy import PasswordMeta
+    PasswordMeta,  
     log_generation,
 )
 
@@ -112,7 +112,7 @@ class TestPasswordGenerator(unittest.TestCase):
         self.assertEqual(len(password), 8)
 
     def test_edge_case_max_length(self):
-        self.generator.length = 26  # Maksymalna długość to teraz 26
+        self.generator.length = 26  
         password = self.generator.generate_password()
         self.assertEqual(len(password), 26)
 
@@ -122,7 +122,7 @@ class TestPasswordGenerator(unittest.TestCase):
 
     def test_too_long_password(self):
         with self.assertRaises(ValueError):
-            PasswordGenerator(length=27)  # Powinien zgłosić błąd, bo maksymalna długość to 26
+            PasswordGenerator(length=27)  
 
 if __name__ == "__main__":
     unittest.main(exit=False)
